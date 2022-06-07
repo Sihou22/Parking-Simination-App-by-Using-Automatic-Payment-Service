@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/oneUIColor"
+    android:layout_gravity="center"
+    tools:context=".DepositActivity">
+    <TextView
+        android:id="@+id/loginBlank1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorDisplayFont"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_corner"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/paySelect"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="@string/payWay"
+            android:layout_marginStart="30dp"
+            android:textColor="@color/colorDisplayFont"
+            ></TextView>
+
+        <Spinner
+            android:id="@+id/paySpinner"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:layout_marginStart="30dp"
+            android:spinnerMode="dropdown"
+            android:overlapAnchor="false"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_corner"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/moneyAlert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="充值金额"
+            android:textColor="@color/colorDisplayFont"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="410dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            >
+
+            <EditText
+                android:id="@+id/moneyNumEdit"
+                android:layout_width="410dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:text="￥"
+                android:textSize="36sp" />
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/depositConfirmButton"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_corner_blue"
+            android:text="@string/deposit"
+            android:textColor="@color/colorCriterionFont" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

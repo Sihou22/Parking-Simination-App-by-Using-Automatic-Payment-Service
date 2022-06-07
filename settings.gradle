@@ -1,0 +1,1 @@
+include ':app', ':butterknife-compiler', ':butterknife-runtime', ':butterknife', ':butterknife-reflect', ':butterknife-lint', ':butterknife-gradle-plugin', ':butterknife-integration-test', ':butterknife-annotations', 'sweet-alert-dialog-lib'

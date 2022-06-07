@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2795e1"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".CarBindActivity">
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/shape_corner_bnw"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/payBindBlank1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorDisplayFont"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/payBindboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:text="@string/payWay"
+            android:textAlignment="center"
+            android:textColor="@color/colorDisplayFont"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/payBindBlank11"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorDisplayFont"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/payWayView"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="400dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_corner"
+            android:text="支付方式"
+            android:textColor="@color/colorDisplayFont"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/payWaybt"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape_corner_blue"
+            android:text="确定"
+            android:textColor="@color/colorCriterionFont" />
+    </LinearLayout>
+
+</LinearLayout>
+
+
+

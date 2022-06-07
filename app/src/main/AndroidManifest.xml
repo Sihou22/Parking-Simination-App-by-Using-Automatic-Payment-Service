@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.chou.automobileunconsciouspaysystem">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_app_icon"
+        android:label="AMUCPS"
+        android:launchMode="standard"
+        android:minSdkVersion="9"
+        android:roundIcon="@mipmap/ic_app_icon_round"
+        android:supportsRtl="true"
+        android:versionName="0.5.3"
+        android:versionCode="1"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon,android:theme,android:allowBackup,android:label,android:supportsRtl">
+        <activity android:name=".StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".payBindActivity" />
+        <activity android:name=".ParkManageActivity" />
+        <activity android:name=".BillActivity" />
+        <activity android:name=".CarlogActivity" />
+        <activity android:name=".carActivity" />
+        <activity android:name=".DepositActivity" />
+        <activity android:name=".PurseActivity" />
+        <activity android:name=".CameraActivity" />
+        <activity android:name=".PasswordActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".profileActivity" />
+        <activity android:name=".identityActivity" />
+        <activity android:name=".CarBindActivity" />
+        <activity android:name=".phoneCodeActivity" />
+        <activity android:name=".phoneInputActivity" />
+        <activity android:name=".LoginActivity">
+        </activity>
+        <meta-data
+            android:name="design_width_in_dp"
+            android:value="421"/>
+        <meta-data
+            android:name="design_height_in_dp"
+            android:value="888"/>
+    </application>
+
+</manifest>

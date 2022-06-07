@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/shape_corner_bnw" >
+
+
+    <TextView
+        android:id="@+id/carItemNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="sans-serif"
+        android:text="京A00000"
+        android:textAlignment="center"
+        android:textColor="@color/colorDisplayFont"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/carItembrand"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:fontFamily="sans-serif"
+            android:text="特拉斯"
+            android:textColor="@color/gray_btn_bg_pressed_color"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/oneUIColor"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/mainBlank1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorDisplayFont"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="个人主页"
+        android:textColor="@color/colorDisplayFont"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/mainBlank"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorDisplayFont"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="个人信息"
+        android:textColor="@color/colorDisplayFont"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_corner_bnw"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@mipmap/ic_launcher_round"
+                app:srcCompat="@mipmap/ic_app_head_round" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/userView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-thin"
+                    android:text=""
+                    android:textColor="@color/colorDisplayFont"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/profile"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="55dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="135dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_corner_bn"
+                    android:text="@string/proFile"
+                    android:textColor="@color/colorCriterionFont"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/mainBlank2"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorDisplayFont"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="钱包"
+        android:textColor="@color/colorDisplayFont"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/purseAlert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_corner"
+        android:text="您当前的余额为负，为了不影响您的停车，请尽快缴费"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_light"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_corner_bn"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/pursezone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="240dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:background="@drawable/layout_border_first_blue"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/moneyNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorCriterionFont"
+                    android:textSize="45dp" />
+
+                <TextView
+                    android:id="@+id/balance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/balance"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorCriterionFont"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/layout_border_blue"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/payWayView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13dp"
+                        android:fontFamily="sans-serif-light"
+                        android:text="支付宝"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorCriterionFont"
+                        android:textSize="35dp" />
+
+                    <TextView
+                        android:id="@+id/payWayAlert"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/payWay"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorCriterionFont"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/paycheck"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shape_corner_bn"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/payadd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textAlignment="center"
+            android:textColor="@color/oneUIColor"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/payalert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="您还没有绑定支付方式喔\n点此立刻绑定支付方式享受快捷支付吧！"
+            android:textAlignment="center"
+            android:textColor="@color/oneUIColor" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/mainBlank3"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorDisplayFont"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="所有车辆"
+        android:textColor="@color/colorDisplayFont"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/carzone"
+        android:layout_width="360dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_corner_bnw"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:background="@drawable/layout_border_first"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/carNumView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="02"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorDisplayFont"
+                    android:textSize="45dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:text="车辆"
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:background="@drawable/layout_border"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/parkNumView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="03"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorDisplayFont"
+                    android:textSize="45dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:text="停车次数"
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/billNumView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="03"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorDisplayFont"
+                    android:textSize="45dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:text="电子发票"
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/orderstate"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_corner_bnw"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/nowOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="您有一个正在进行的订单"
+            android:textAlignment="center"
+            android:textColor="@color/red_btn_bg_pressed_color" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/nowStateCar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                android:text="车牌：" />
+
+            <TextView
+                android:id="@+id/nowStateCarNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="京A11111"
+                android:textColor="@color/colorDisplayFont"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/nowStatePark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_weight="1"
+                android:text="停车场：" />
+
+            <TextView
+                android:id="@+id/nowStateParkId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="朝阳停车场"
+                android:textColor="@color/colorDisplayFont"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/nowStateIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                android:text="驶入时间：" />
+
+            <TextView
+                android:id="@+id/nowStateInTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/colorDisplayFont"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/orderoutzone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/nowStateOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                android:text="驶出时间：" />
+
+            <TextView
+                android:id="@+id/nowStateOutTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/colorDisplayFont"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/logoutbutton"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_corner_bnw"
+        android:text="登出" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/ic_app_head" />
+
+            <TextView
+                android:id="@+id/appinFormation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AMUCPS V0.6\n2019 by Chou"
+                android:textAlignment="center" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

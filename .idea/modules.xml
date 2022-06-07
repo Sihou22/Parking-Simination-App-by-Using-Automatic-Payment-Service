@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AutoMobileUnconsciousPaySystem.iml" filepath="$PROJECT_DIR$/AutoMobileUnconsciousPaySystem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/butterknife/butterknife.iml" filepath="$PROJECT_DIR$/butterknife/butterknife.iml" />
+      <module fileurl="file://$PROJECT_DIR$/butterknife-annotations/butterknife-annotations.iml" filepath="$PROJECT_DIR$/butterknife-annotations/butterknife-annotations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/butterknife-compiler/butterknife-compiler.iml" filepath="$PROJECT_DIR$/butterknife-compiler/butterknife-compiler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/butterknife-gradle-plugin/butterknife-gradle-plugin.iml" filepath="$PROJECT_DIR$/butterknife-gradle-plugin/butterknife-gradle-plugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/butterknife-integration-test/butterknife-integration-test.iml" filepath="$PROJECT_DIR$/butterknife-integration-test/butterknife-integration-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/butterknife-lint/butterknife-lint.iml" filepath="$PROJECT_DIR$/butterknife-lint/butterknife-lint.iml" />
+      <module fileurl="file://$PROJECT_DIR$/butterknife-reflect/butterknife-reflect.iml" filepath="$PROJECT_DIR$/butterknife-reflect/butterknife-reflect.iml" />
+      <module fileurl="file://$PROJECT_DIR$/butterknife-runtime/butterknife-runtime.iml" filepath="$PROJECT_DIR$/butterknife-runtime/butterknife-runtime.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sweet-alert-dialog-lib/sweet-alert-dialog-lib.iml" filepath="$PROJECT_DIR$/sweet-alert-dialog-lib/sweet-alert-dialog-lib.iml" />
+    </modules>
+  </component>
+</project>

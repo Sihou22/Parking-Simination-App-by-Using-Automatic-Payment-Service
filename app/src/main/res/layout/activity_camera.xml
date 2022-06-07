@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CameraActivity">
+
+    <SurfaceView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/svCamera"
+        android:layout_gravity="center" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivCapturePhoto"
+        android:layout_gravity="center_horizontal|bottom"
+        android:src="@drawable/capture_photo"
+        android:layout_marginBottom="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/parkSelectView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/parkSelectButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/shape_corner_bnt"
+                android:focusableInTouchMode="false"
+                android:textColor="@color/colorCriterionFont"
+                android:textOff="一号\n停车场"
+                android:textOn="朝阳\n停车场" />
+
+            <ToggleButton
+                android:id="@+id/parkSelectButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shape_corner_bnt"
+                android:focusableInTouchMode="false"
+                android:textColor="@color/colorCriterionFont"
+                android:textOff="二号\n停车场"
+                android:textOn="阳光海岸\n停车场" />
+
+            <ToggleButton
+                android:id="@+id/parkSelectButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_corner_bnt"
+                android:focusableInTouchMode="false"
+                android:textColor="@color/colorCriterionFont"
+                android:textOff="三号\n停车场"
+                android:textOn="京西\n停车场" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/nowParkView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_corner_bnt"
+            android:fontFamily="sans-serif-medium"
+            android:padding="10dp"
+            android:text="停车场显示区"
+            android:textAlignment="center"
+            android:textColor="@color/colorCriterionFont"
+            android:textSize="18sp" />
+
+        <ToggleButton
+            android:id="@+id/flashButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_corner_bnt"
+            android:textColor="@color/colorCriterionFont"
+            android:textOff="闪光灯\n关"
+            android:textOn="闪光灯\n开" />
+        <ToggleButton
+            android:id="@+id/ReMoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_corner_bnt"
+            android:textColor="@color/colorCriterionFont"
+            android:textOff="实时识别\n关"
+            android:textOn="实时识别\n开" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivPlateRect"
+            android:layout_width="136dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/plate_rect"
+            android:src="@drawable/plate_rect" />
+
+        <TextView
+            android:id="@+id/tvPlateResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/shape_corner"
+            android:padding="10dp"
+            android:text="拍照识别车牌"
+            android:textColor="@color/colorDisplayFont"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/recheckbn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/shape_corner"
+            android:padding="10dp"
+            android:text="重新检测"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/correctbn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/shape_corner"
+            android:padding="10dp"
+            android:text="正确"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</FrameLayout>

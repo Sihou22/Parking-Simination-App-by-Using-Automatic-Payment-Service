@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".carActivity"
+    android:orientation="vertical"
+    android:background="@color/oneUIColor"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/loginBlank1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorDisplayFont"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/Carboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="已绑定车辆"
+        android:textAlignment="center"
+        android:textColor="@color/colorDisplayFont"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/loginBlank11"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorDisplayFont"
+        android:textSize="30sp" />
+
+    <ListView
+        android:id="@+id/carList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/oneUIColor"
+        android:dividerHeight="18dp"/>
+
+
+</LinearLayout>

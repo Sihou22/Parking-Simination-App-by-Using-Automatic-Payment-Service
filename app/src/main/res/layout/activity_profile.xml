@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/oneUIColor"
+    tools:context=".profileActivity">
+
+    <TextView
+        android:id="@+id/loginBlank1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorDisplayFont"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher_round"
+        app:srcCompat="@mipmap/ic_app_head_round" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="$username"
+        android:textAlignment="center"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/loginBlank2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorDisplayFont"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/phoneButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_corner"
+        android:text="@string/phoneNum_off"
+        android:divider="@color/oneUIColor"
+        android:dividerHeight="1dp"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="18sp"
+        style="?android:attr/borderlessButtonStyle"/>
+
+    <Button
+        android:id="@+id/iDButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_corner"
+        android:text="@string/nameIdentify_off"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="18sp"
+        style="?android:attr/borderlessButtonStyle"/>
+
+    <Button
+        android:id="@+id/carButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_corner"
+        android:text="@string/carNum_off"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="18sp"
+        style="?android:attr/borderlessButtonStyle"/>
+
+    <Button
+        android:id="@+id/payButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_corner"
+        android:text="@string/payWay_off"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="18sp"
+        style="?android:attr/borderlessButtonStyle"/>
+
+    <Button
+        android:id="@+id/changePwbutton"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/shape_corner_bnw"
+        android:text="修改密码" />
+
+</LinearLayout>

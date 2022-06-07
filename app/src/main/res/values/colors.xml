@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="aliPayBlue">#00a0e9</color>
+    <color name="groundWhite">#FFFFFF</color>
+    <color name="colorCriterionFont">#FFFFFF</color>
+    <color name="colorDisplayFont">#000000</color>
+   <color name="oneUIColor">#FCFCFC</color>
+    <!--   <color name="oneUIColor">#F1F3F0</color>-->
+  </resources>

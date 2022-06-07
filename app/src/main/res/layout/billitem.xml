@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/shape_corner_bnw"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="无感支付停车场发票"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/colorDisplayFont"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="------------------------"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/colorDisplayFont"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            />
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="车牌号码："
+                android:textAllCaps="true"
+                android:textColor="@color/colorDisplayFont"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/billCarId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:text="京A11111"
+                android:textAllCaps="true"
+                android:textColor="@color/colorDisplayFont"
+                android:textSize="25dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="450dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="车辆型号："
+                android:textAllCaps="true"
+                android:textColor="@color/colorDisplayFont"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/billCarBoard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:text="BWM525"
+                android:textAllCaps="true"
+                android:textColor="@color/colorDisplayFont"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="驶入时间："
+                android:textAllCaps="true"
+                android:textColor="@color/colorDisplayFont"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/billInTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:text="2019/4/27/17:53:46"
+                android:textAllCaps="true"
+                android:textColor="@color/colorDisplayFont"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="驶出时间："
+                android:textAllCaps="true"
+                android:textColor="@color/colorDisplayFont"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/billOutTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:text="2019/4/27/18:53:46"
+                android:textAllCaps="true"
+                android:textColor="@color/colorDisplayFont"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="需支付费用："
+                android:textAllCaps="true"
+                android:textColor="@color/colorDisplayFont"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/billFare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:text="5"
+                android:textAllCaps="true"
+                android:textColor="@color/colorDisplayFont"
+                android:textSize="25dp" />
+            <TextView
+                android:id="@+id/billFareClass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:text="元"
+                android:textAllCaps="true"
+                android:textColor="@color/colorDisplayFont"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/billPark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="阳光海岸停车场"
+            android:textAlignment="textEnd"
+            android:textAllCaps="true"
+            android:textColor="@color/colorDisplayFont"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

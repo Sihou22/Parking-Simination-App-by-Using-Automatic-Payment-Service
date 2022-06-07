@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".carActivity"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@color/oneUIColor"
+    >
+
+    <TextView
+        android:id="@+id/loginBlank1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorDisplayFont"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/billboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="停车场发票"
+        android:textAlignment="center"
+        android:textColor="@color/colorDisplayFont"
+        android:textSize="50sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/printButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/shape_corner_bn"
+            style="?android:attr/borderlessButtonStyle"
+            android:text="打印"
+            android:textAlignment="center"
+            android:textColor="@color/colorCriterionFont" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/loginBlank11"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorDisplayFont"
+        android:textSize="30sp" />
+
+    <ListView
+        android:id="@+id/billList"
+        android:layout_gravity="center"
+        android:layout_width="360dp"
+        android:divider="@color/oneUIColor"
+        android:dividerHeight="18dp"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
